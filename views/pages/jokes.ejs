@@ -1,0 +1,27 @@
+<%- include('../partials/header') %>
+
+<main class="main" id="jokesMain">
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4">
+            <% data.forEach(joke => { %>
+                <div class="col">
+                    <div class="card h-100 joke-card">
+                        <h2 class="card-title setup">
+                            <%= joke.setup %>
+                        </h2>
+                        <footer class="card-footer">
+                            <p class="card-text">Click for
+                                <a href="/jokes/<%= joke.id %>"                  class="joke-link">punchline</a>
+                            </p>
+                        </footer>
+                    </div>
+                </div>
+                
+            <% }) %>
+        </div>
+    </div>
+</main>
+
+
+
+<%- include('../partials/footer') %>
