@@ -1,3 +1,16 @@
-* { box-sizing: border-box;
+* { box-sizing: border-box;}
 
+.header {
+    background-color: aqua;  
+    padding: 32px 0;
+    font-family:sans-serif;
+}
+
+.footer {
+    padding: 32px 0;
+    background-color: grey;
+}
+
+.jokeSingle {
+    background-color: aliceblue;
 }
